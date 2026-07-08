@@ -20,6 +20,8 @@ branding and build/distribution infrastructure, not features.
 - The transform renames the four case-forms of *VyOS* → *DozenOS* while
   deliberately **keeping** the historical `vyatta` names (they are part of
   the upstream package/command interface).
+- The default login is **`dozenos` / `dozenos`**. Change the password
+  after first boot.
 
 We are grateful to the VyOS maintainers and community for the software this
 project is built on.
