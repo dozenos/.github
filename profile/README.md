@@ -1,6 +1,6 @@
 # DozenOS
 
-**DozenOS is a downstream rebuild of [VyOS](https://vyos.io) — an open-source, Debian-based network operating system.**
+**DozenOS is a downstream rebuild of the [VyOS](https://vyos.io) rolling release — an open-source, Debian-based network operating system.**
 
 Every repository in this organization is an **automated 1:1 mirror** of the
 corresponding [`vyos/*`](https://github.com/vyos) repository, produced by a
