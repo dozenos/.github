@@ -19,7 +19,7 @@ branding and build/distribution infrastructure, not features.
   `dozenos/hvinfo` ← `vyos/hvinfo`, and so on.
 - The transform renames the four case-forms of *VyOS* → *DozenOS* while
   deliberately **keeping** the historical `vyatta` names (they are part of
-  the upstream package/command interface, not branding).
+  the upstream package/command interface).
 
 We are grateful to the VyOS maintainers and community for the software this
 project is built on.
