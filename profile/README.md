@@ -1,38 +1,15 @@
 # DozenOS
 
-**DozenOS is a downstream rebuild of the [VyOS](https://vyos.io) rolling release — an open-source, Debian-based network operating system.**
+**DozenOS is an open-source, Debian-based network operating system for
+routing and firewalling.**
 
-Every repository in this organization is an **automated 1:1 mirror** of the
-corresponding [`vyos/*`](https://github.com/vyos) repository, produced by a
-mechanical rename/rebrand transform and re-synced from upstream on a schedule.
-DozenOS builds the same router/firewall platform VyOS does — the difference is
-branding and build/distribution infrastructure, not features.
-
-## Relationship to VyOS
-
-- **All source code originates from VyOS** and remains under the **GNU GPL**
-  (see each repository's `LICENSE`/`debian/copyright`). DozenOS adds no
-  proprietary code; it re-brands and re-builds existing free software.
-- Repositories here map one-to-one onto their upstream counterparts, e.g.
-  `dozenos/dozenos-build` ← `vyos/vyos-build`,
-  `dozenos/dozenos-1x` ← `vyos/vyos-1x`,
-  `dozenos/hvinfo` ← `vyos/hvinfo`, and so on.
-- The transform renames the four case-forms of *VyOS* → *DozenOS* while
-  deliberately **keeping** the historical `vyatta` names (they are part of
-  the upstream package/command interface).
-- The default login is **`dozenos` / `dozenos`**. Change the password
-  after first boot.
-
-We are grateful to the VyOS maintainers and community for the software this
-project is built on.
-
-## A note on upstream references
-
-A few `vyos`-owned URLs are **kept on purpose**, because DozenOS reuses that
-upstream infrastructure rather than re-hosting it — for example the SBOM tool
-download from `cdn.vyos.io` and kernel source tarballs from
-`packages.vyos.net/source-mirror`. These are the only intentional `vyos`
-references left in the trees, and they exist so the build keeps working.
+It is an automated downstream rebuild of the [VyOS](https://vyos.io) rolling
+release: every repository in this organization is a mechanical, regularly
+re-synced mirror of its upstream counterpart, with branding and
+build/distribution infrastructure as the only changes — no features are added
+or removed. All source code remains under the **GNU GPL** (see each
+repository's `LICENSE`/`debian/copyright`), and we are grateful to the
+upstream maintainers and community for the software this project is built on.
 
 ## Downloads
 
@@ -43,14 +20,18 @@ Nightly ISO and virtual machine images can be downloaded from the
 `dozenos-nightly-build`). Every artifact is minisign-signed; verification
 instructions are on the page.
 
+The default login is **`dozenos` / `dozenos`**. Change the password after
+first boot.
+
 ## Building
 
 Build tooling lives in [`dozenos-build`](https://github.com/dozenos/dozenos-build).
-The nightly ISO is built and published (minisign-signed) from a dedicated
-build-and-release repository. See each repository's own README for details.
+The nightly images are built and published (minisign-signed) from
+[`dozenos-nightly-build`](https://github.com/dozenos/dozenos-nightly-build).
+See each repository's own README for details.
 
 ---
 
 *DozenOS is an independent project and is not affiliated with or endorsed by
-VyOS or Sentrium S.L. "VyOS" is a trademark of its respective owner; it is used
-here only to describe the upstream origin of this software.*
+the upstream project or its owners. "VyOS" is a trademark of its respective
+owner; it is used here only to describe the upstream origin of this software.*
