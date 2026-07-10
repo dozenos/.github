@@ -34,6 +34,15 @@ download from `cdn.vyos.io` and kernel source tarballs from
 `packages.vyos.net/source-mirror`. These are the only intentional `vyos`
 references left in the trees, and they exist so the build keeps working.
 
+## Downloads
+
+Nightly ISO and virtual machine images can be downloaded from the
+**[DozenOS nightly builds page](https://dozenos.github.io/dozenos-nightly-build/)**
+(the same artifacts are attached to the
+[GitHub Releases](https://github.com/dozenos/dozenos-nightly-build/releases) of
+`dozenos-nightly-build`). Every artifact is minisign-signed; verification
+instructions are on the page.
+
 ## Building
 
 Build tooling lives in [`dozenos-build`](https://github.com/dozenos/dozenos-build).
